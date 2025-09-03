@@ -28,16 +28,34 @@ header h1 {
   margin-bottom: 10px;
 }
 
+
 main {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
-  justify-content: center;
 }
 
 @media (min-width: 768px) {
   main {
-    grid-template-columns: 2fr 1fr;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  #activities-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #activities-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .activity-card {
+    font-size: 15px;
+    padding: 10px;
   }
 }
 
@@ -47,7 +65,8 @@ section {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
+  margin-bottom: 40px;
 }
 
 section h3 {
@@ -56,14 +75,35 @@ section h3 {
   border-bottom: 1px solid #ddd;
   color: #1a237e;
 }
-
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
+  margin-bottom: 20px;
+  padding: 18px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
+
+.register-form {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 500px) {
+  .register-form input {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .register-form button {
+    width: 100%;
+  }
+}
+
 
 .activity-card h4 {
   margin-bottom: 10px;
