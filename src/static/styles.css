@@ -59,6 +59,7 @@ main {
   }
 }
 
+section {
   background-color: white;
   padding: 20px;
   border-radius: 5px;
@@ -66,7 +67,6 @@ main {
   width: 100%;
   max-width: 600px;
   margin-bottom: 40px;
-  }
 }
 
 section h3 {
@@ -75,34 +75,23 @@ section h3 {
   border-bottom: 1px solid #ddd;
   color: #1a237e;
 }
+.activity-card {
+  margin-bottom: 20px;
+  padding: 18px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
- .activity-card {
-   margin-bottom: 20px;
-   padding: 18px;
-   border: 1px solid #ddd;
-   border-radius: 5px;
-   background-color: #f9f9f9;
-   box-shadow: 0 1px 3px rgba(0,0,0,0.07);
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
- }
-  }
- .register-form {
-   margin-top: 12px;
-   display: flex;
-   flex-wrap: wrap;
-   gap: 8px;
- }
-
-@media (max-width: 500px) {
-  .register-form input {
-    width: 100%;
-    margin-bottom: 8px;
-  }
-  .register-form button {
-    width: 100%;
-  }
+.register-form {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 @media (max-width: 500px) {
@@ -114,7 +103,7 @@ section h3 {
     width: 100%;
   }
 }
-}
+
 
 .activity-card h4 {
   margin-bottom: 10px;
